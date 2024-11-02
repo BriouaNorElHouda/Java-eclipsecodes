@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="Agent" table="agent">
+        <id name="numAg" column="NUMAG">
+            <generator class="identity"/>
+        </id>
+        <property name="ipAdresse"/>
+        <property name="firstname"/>
+        <property name="lastname"/>
+        <property name="email"/>
+        <property name="psswrd"/>
+        <property name="phoneNumber"/>
+
+       
+        <set name="deliveryGuy" table="deliveryguy" inverse="true" cascade="all">
+            <key column="NUMAG"/>
+            <one-to-many class="model.DeliveryGuy"/>
+        </set>
+
+      
+    </class>
+</hibernate-mapping>

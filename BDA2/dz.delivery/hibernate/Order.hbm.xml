@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="Order" table="orderr">
+        <id name="numO" column="NUMO">
+            <generator class="identity"/>
+        </id>
+     
+        <property name="status"/>
+        <property name="review"/>
+        <property name="evaluation"/>
+        <property name="createdAt"/>
+        <property name="confirmedAt"/>
+        <property name="deliveredAt"/>
+        
+        <!-- Many-to-one associations -->
+        <many-to-one name="client" class="model.Client" column="CLIENTID"/>
+        <many-to-one name="deliveryGuy" class="model.DeliveryGuy" column="NUMD"/>
+        
+        <!-- One-to-many association avec OrderLine -->
+        <list name="orderLines" table="orderline" cascade="all">
+            <key column="NUMO"/>
+            <index column="NUMO"/>
+            <one-to-many class="model.OrderLine"/>
+        </list>
+        
+        <!-- Many-to-one Address -->
+        <many-to-one name="destination" class="model.Address" column="destination"/>
+        <many-to-one name="source" class="model.Address" column="source"/>
+    </class>
+</hibernate-mapping>

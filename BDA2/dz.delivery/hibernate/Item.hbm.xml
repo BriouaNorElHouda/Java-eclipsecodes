@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="Item" table="item">
+        <id name="Numberr" column="NUMBERR">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="description"/>
+        <property name="price"/>
+        
+        <!-- One-to-many association avec OrderLine -->
+        <list name="rOrderLine" table="orderline" cascade="all">
+            <key column="NUMBERR"/>
+            <index column="NUMBERR"/>
+            <one-to-many class="model.OrderLine"/>
+        </list>
+    </class>
+</hibernate-mapping>

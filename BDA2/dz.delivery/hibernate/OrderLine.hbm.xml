@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="OrderLine" table="orderline">
+        <id name="numOL" column="NUMOL">
+            <generator class="identity"/>
+        </id>
+        <property name="quantity"/>
+        <property name="photoFilePath"/>
+        
+        <!-- Many-to-one associations -->
+        <many-to-one name="order" class="model.Order" column="NUMO"/>
+        <many-to-one name="item" class="model.Item" column="item_id"/>
+    </class>
+</hibernate-mapping>

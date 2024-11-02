@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="DeliveryGuy" table="deliveryguy">
+        <id name="numD" column="NUMD">
+            <generator class="identity"/>
+        </id>
+        <property name="firstname"/>
+        <property name="lastname"/>
+        <property name="email"/>
+        <property name="psswrd"/>
+        <property name="phoneNumber"/>
+        <property name="status"/>
+        
+        <!-- One-to-many association avec Order -->
+        <set name="GOrders" table="orderr" inverse="true" cascade="all">
+            <key column="NUMD"/>
+            <one-to-many class="model.Order"/>
+        </set>
+        
+    </class>
+</hibernate-mapping>

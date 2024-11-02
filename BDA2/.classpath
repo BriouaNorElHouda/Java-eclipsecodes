@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="dz.delivery"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/sqldeveloper/sqldeveloper/lib/ojdbc11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/hibernate-commons-annotations-5.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/osgi/org.osgi.compendium-5.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/osgi/hibernate-osgi-5.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/osgi/org.osgi.core-6.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/hibernate-core-5.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/jandex-2.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/required/javassist-3.23.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/spatial/hibernate-spatial-5.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/hibernate-release-5.3.7.Final/lib/spatial/org-apache-commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/dell/Downloads/byte-buddy-1.14.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+    <class name="Address" table="adresse">
+        <id name="numA" column="NUMA">
+            <generator class="increment"/>
+        </id>
+        <property name="street" column="street" />
+        <property name="city" column="city" />
+        <property name="postalCode" column="postal_code" />
+        <property name="country" column="country" />
+        <property name="latitude" column="latitude" />
+        <property name="longitude" column="longitude" />
+        
+    </class>
+</hibernate-mapping>
