@@ -4,7 +4,7 @@ public class Cours {
 	public static void main(String[]Args) {
 	//boolean[] Choosing;
 	//Choosing = new boolean[20];
-	
+	//
 	
 		boolean[] Choosing = new boolean[5];
 		int[]Number = new int[5];
